@@ -1,0 +1,27 @@
+.service-card .service-visual { height: 190px; background: var(--soft); }
+.service-card .service-visual::after { content: none; }
+.service-card .service-visual img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.service-visual--pair { position: relative; overflow: hidden; }
+.service-visual--pair img { position: absolute; inset: 0; }
+.service-visual--pair img + img { opacity: 0; animation: consultingPhotoFade 10s infinite; }
+.service-visual--trio { position: relative; overflow: hidden; }
+.service-visual--trio img { position: absolute; inset: 0; }
+.service-visual--trio img:nth-child(2) { opacity: 0; animation: installationSecondPhoto 15s infinite; }
+.service-visual--trio img:nth-child(3) { opacity: 0; animation: installationThirdPhoto 15s infinite; }
+.service-visual--quad { position: relative; overflow: hidden; }
+.service-visual--quad img { position: absolute; inset: 0; }
+.service-visual--quad img:nth-child(2) { opacity: 0; animation: installationFourSecond 20s infinite; }
+.service-visual--quad img:nth-child(3) { opacity: 0; animation: installationFourThird 20s infinite; }
+.service-visual--quad img:nth-child(4) { opacity: 0; animation: installationFourFourth 20s infinite; }
+@keyframes installationFourSecond { 0%, 21%, 50%, 100% { opacity: 0; } 25%, 46% { opacity: 1; } }
+@keyframes installationFourThird { 0%, 46%, 75%, 100% { opacity: 0; } 50%, 71% { opacity: 1; } }
+@keyframes installationFourFourth { 0%, 71%, 100% { opacity: 0; } 75%, 96% { opacity: 1; } }
+@keyframes installationSecondPhoto { 0%, 28%, 67%, 100% { opacity: 0; } 34%, 61% { opacity: 1; } }
+@keyframes installationThirdPhoto { 0%, 61%, 100% { opacity: 0; } 67%, 94% { opacity: 1; } }
+@keyframes consultingPhotoFade { 0%, 42%, 100% { opacity: 0; } 50%, 92% { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  .service-visual--pair img + img { animation: none; }
+  .service-visual--trio img + img { animation: none; }
+  .service-visual--quad img + img { animation: none; }
+}
+@media (max-width: 900px) { .service-card .service-visual { height: auto; aspect-ratio: 3 / 2; } }

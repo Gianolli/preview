@@ -1,0 +1,76 @@
+.about-lifecycle .about-kicker{display:inline-flex;color:#087e99;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:800}
+.about-lifecycle{ padding-block: 84px; background: #f5f9fb; border-block: 1px solid #e2edf1; }
+.lifecycle-heading{ max-width: 800px; }
+.lifecycle-heading h2{ color: var(--navy); font-size: clamp(2rem,3.2vw,3.3rem); line-height: 1.15; margin: 16px 0; }
+.lifecycle-heading p{ color: #526579; max-width: 650px; }
+.lifecycle-layout{ display: grid; grid-template-columns: 1.3fr .85fr; align-items: center; gap: 54px; margin-top: 40px; }
+.lifecycle-diagram{ position: relative; width: 100%; aspect-ratio: 1; max-width: 650px; justify-self: center; }
+.lifecycle-orbit{ position: absolute; inset: 0; width: 100%; height: 100%; }
+.lifecycle-center{ position: absolute; left: 34%; top: 34%; width: 32%; height: 32%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; border-radius: 50%; background: #fff; border: 1px solid #e0edf1; box-shadow: 0 12px 38px #0a66740a; }
+.lifecycle-center-icon{ color: #0798b7; font-size: 2rem; line-height: 1.3; }
+.lifecycle-center strong{ color: var(--navy); font-size: .92rem; }
+.lifecycle-center > span:last-child{ color: #607086; font-size: .7rem; margin-top: 4px; }
+.lifecycle-stages{ list-style: none; margin: 0; padding: 0; }
+.lifecycle-stage{ position: absolute; width: 29%; transform: translate(-50%,-50%); }
+.lifecycle-stage--1{ left: 50%; top: 8%; }
+.lifecycle-stage--2{ left: 82%; top: 24%; }
+.lifecycle-stage--3{ left: 87%; top: 62%; }
+.lifecycle-stage--4{ left: 69%; top: 89%; }
+.lifecycle-stage--5{ left: 31%; top: 89%; }
+.lifecycle-stage--6{ left: 13%; top: 62%; }
+.lifecycle-stage--7{ left: 18%; top: 24%; }
+.lifecycle-step{ display: flex; flex-direction: column; align-items: center; gap: 7px; text-align: center; padding: 10px 6px; color: #324e60; font-size: .8rem; line-height: 1.45; font-weight: 700; border-radius: 12px; background: #f5f9fb; }
+.lifecycle-step-number{ display: grid; place-items: center; width: 38px; height: 38px; background: #fff; border: 1px solid #cee3ea; border-radius: 50%; color: #087e99; font-size: .76rem; transition: background .2s; }
+.lifecycle-step:hover .lifecycle-step-number,.lifecycle-step.is-selected .lifecycle-step-number{ color: #fff; background: #087e99; border-color: #087e99; }
+.lifecycle-step.is-selected{ color: #087e99; }
+.lifecycle-details{ align-self: center; background: var(--navy); color: #dbe9ef; padding: 36px; border-radius: 24px; }
+.lifecycle-detail-kicker{ display: block; color: #83d3e1; font-size: .74rem; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; }
+.lifecycle-detail-number{ display: block; font-family: Fraunces,Georgia,serif; font-size: 3.5rem; color: #78d0e1; line-height: 1; margin-block: 30px 20px; }
+.lifecycle-detail h3{ color: #fff; font-size: 1.8rem; line-height: 1.25; margin: 0 0 18px; }
+.lifecycle-detail p{ font-size: .98rem; line-height: 1.85; margin: 0; }
+.lifecycle-detail[hidden]{ display: none; }
+.lifecycle-detail + .lifecycle-detail:not([hidden]){ margin-top: 32px; }
+.is-interactive .lifecycle-detail{ margin-top: 0; min-height: 290px; }
+.lifecycle-footnote{ font-size: .79rem; color: #627989; border-top: 1px solid #dce8ee; margin: 30px 0 0; padding-top: 18px; max-width: 960px; }
+@media(min-width:761px) and (max-width:1100px){.lifecycle-layout{ gap: 24px; grid-template-columns: 1.2fr 1fr; }
+.lifecycle-step{ font-size: .7rem; }
+.lifecycle-center strong{ font-size: .75rem; }
+.lifecycle-center > span:last-child{ font-size: .6rem; }
+.lifecycle-details{ padding: 26px; }}
+@media(max-width:760px){.lifecycle-layout{ grid-template-columns: 1fr; gap: 26px; margin-top: 26px; }
+.about-lifecycle{ padding-block: 54px; }
+.lifecycle-diagram{ aspect-ratio: auto; }
+.lifecycle-orbit,.lifecycle-center{ display: none; }
+.lifecycle-stages{ display: grid; gap: 8px; }
+.lifecycle-stage{ position: static; width: auto; transform: none; }
+.lifecycle-step{ flex-direction: row; text-align: left; gap: 14px; padding: 10px 14px; font-size: .86rem; background: #fff; border: 1px solid #dce8ee; }
+.lifecycle-step-number{ flex-shrink: 0; }
+.lifecycle-step.is-selected{ border-color: #087e99; }
+.lifecycle-details{ padding: 28px; }
+.is-interactive .lifecycle-detail{ min-height: 0; }}
+
+.lifecycle-layout{align-items:start}
+.lifecycle-diagram{position:sticky;top:140px}
+.cycle-service-boxes{display:grid;gap:12px;margin-top:26px}
+.cycle-service-box{padding:19px 20px;border:1px solid #365164;border-radius:14px;background:#10283b}
+.cycle-service-box h4{font-family:Manrope,Arial,sans-serif;font-size:.85rem;color:#9bddeb;margin:0 0 8px;line-height:1.5}
+.cycle-service-box p{font-size:.88rem;line-height:1.8;color:#dce9ee}
+@media(max-width:760px){.lifecycle-diagram{position:relative;top:auto}}
+
+.lifecycle-footnote{font-size:.7rem;line-height:1.65}
+.lifecycle-step{cursor:pointer;position:relative;transition:background .2s,color .2s,box-shadow .2s}
+.lifecycle-step::after{content:'↗';position:absolute;right:8px;top:12px;font-size:.95rem;color:#087e99;opacity:.55;transition:opacity .2s,transform .2s}
+.lifecycle-step:hover,.lifecycle-step:focus-visible{background:#e7f3f7;box-shadow:0 4px 16px #087e9912}
+.lifecycle-step:hover::after,.lifecycle-step:focus-visible::after{opacity:1;transform:translate(2px,-2px)}
+.lifecycle-step.is-selected{background:#e4f2f6;box-shadow:inset 0 -2px #087e99}
+.lifecycle-step.is-selected::after{opacity:1}
+@media(max-width:760px){.lifecycle-step{padding-right:36px}.lifecycle-step::after{top:50%;transform:translateY(-50%)}.lifecycle-step:hover::after,.lifecycle-step:focus-visible::after{transform:translate(2px,-50%)}}
+
+/* Soft pulse along the connections between lifecycle stages. */
+.lifecycle-orbit>circle{animation:lifecycleConnectionPulse 2.4s ease-in-out infinite}
+.lifecycle-orbit>path{animation:lifecycleArrowPulse 2.4s ease-in-out infinite}
+.lifecycle-orbit>path:nth-of-type(2){animation-delay:.4s}
+.lifecycle-orbit>path:nth-of-type(3){animation-delay:.8s}
+@keyframes lifecycleConnectionPulse{0%,100%{opacity:.3}50%{opacity:1}}
+@keyframes lifecycleArrowPulse{0%,100%{opacity:.25}50%{opacity:1;stroke:#078aa8}}
+@media(prefers-reduced-motion:reduce){.lifecycle-orbit>circle,.lifecycle-orbit>path{animation:none;opacity:1}}

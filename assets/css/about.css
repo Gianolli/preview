@@ -1,0 +1,113 @@
+.about-page{ overflow: hidden; }
+.about-intro{ position: relative; background: linear-gradient(120deg,#f3fafc 0%,#fff 65%); }
+.about-intro-grid{ display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 64px; padding-block: 76px 100px; }
+.about-intro-copy{ max-width: 710px; }
+.about-kicker{ display: inline-flex; align-items: center; gap: 12px; color: #087e99; font-size: .78rem; letter-spacing: .16em; text-transform: uppercase; font-weight: 800; }
+.about-kicker > span{ width: 28px; height: 2px; background: currentColor; }
+.about-intro h1{ margin: 22px 0; color: var(--navy); font-size: clamp(2.8rem,5.1vw,5.2rem); letter-spacing: -.055em; line-height: 1.08; }
+.about-intro h1 em{ display: block; color: #0789a7; font-style: normal; }
+.about-intro .lead{ max-width: 570px; font-size: 1.14rem; line-height: 1.8; }
+.about-text-link{ display: inline-flex; align-items: center; gap: 26px; margin-top: 18px; padding-bottom: 8px; border-bottom: 1px solid #9bcdd7; color: var(--navy); font-weight: 800; font-size: .9rem; }
+.about-text-link:hover{ color: #087e99; }
+.about-text-link > span:last-child{ font-size: 1.4rem; font-weight: 400; }
+
+
+
+
+
+
+
+
+
+
+
+
+.about-purpose{ padding-block: 0 88px; }
+.about-purpose-grid{ display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
+.about-purpose-card{ padding: 40px 42px; border: 1px solid #dce9ee; border-radius: 26px; background: #fff; }
+.about-card-top{ display: flex; justify-content: space-between; align-items: center; margin-bottom: 28px; }
+.about-symbol{ width: 52px; height: 52px; border-radius: 16px; display: grid; place-items: center; color: #0784a0; background: #edf8fb; }
+.about-symbol svg{ width: 28px; height: 28px; }
+.about-number{ font-size: .8rem; letter-spacing: .12em; color: #718394; }
+.about-purpose-card h2{ margin: 0 0 18px; font-size: 2.3rem; line-height: 1.15; color: var(--navy); }
+.about-purpose-card p{ margin: 0; font-size: 1rem; line-height: 1.9; }
+.about-purpose-card--dark{ position: relative; background: var(--navy); border-color: var(--navy); color: #d9e8ef; }
+.about-purpose-card--dark h2{ color: #fff; }
+.about-purpose-card--dark .about-symbol{ color: #78d4e4; background: #143044; }
+.about-purpose-card--dark .about-number{ color: #9ab5c4; }
+.about-values{ background: #f5f9fb; padding-block: 80px 88px; }
+.about-values-heading{ display: flex; gap: 48px; align-items: center; margin-bottom: 38px; }
+.about-values-heading h2{ font-size: clamp(2.2rem,3vw,3rem); line-height: 1.15; color: var(--navy); margin: 12px 0 0; }
+.about-heading-rule{ height: 1px; background: #dce9ee; flex: 1; }
+.about-value-grid{ display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px; }
+.about-value-card{ padding: 32px; border-radius: 20px; background: #fff; border: 1px solid #e2edf1; }
+.about-value-icon{ width: 44px; height: 44px; display: grid; place-items: center; color: #0784a0; margin-bottom: 26px; }
+.about-value-icon svg{ width: 34px; height: 34px; }
+.about-value-card h3{ font-size: 1.55rem; color: var(--navy); margin: 0 0 12px; }
+.about-value-card p{ color: #526579; font-size: .96rem; line-height: 1.8; margin: 0; }
+.about-contact{ padding-block: 54px; border-top: 1px solid #e2edf1; }
+.about-contact-inner{ display: flex; align-items: center; justify-content: space-between; gap: 30px; }
+.about-contact h2{ color: var(--navy); margin: 0; font-size: clamp(1.7rem,2.5vw,2.5rem); line-height: 1.3; }
+.about-story{ padding-block: 10px 88px; }
+.about-story-header{ border-bottom: 1px solid #dae8ee; padding-bottom: 26px; margin-bottom: 40px; }
+.about-story-header h2{ font-size: clamp(2.2rem,3.4vw,3.5rem); line-height: 1.15; color: var(--navy); margin: 14px 0 0; }
+.about-story-foundation{ display: grid; grid-template-columns: 180px 1fr; gap: 48px; align-items: center; margin-bottom: 36px; }
+.about-year{ border-left: 3px solid #0798b7; padding-left: 22px; }
+.about-year strong{ display: block; font-family: Fraunces,Georgia,serif; font-size: 3.3rem; line-height: 1.1; color: #087e99; font-weight: 500; }
+.about-year span{ display: block; font-size: .75rem; color: #607086; margin-top: 9px; }
+.about-story-lead{ font-size: clamp(1.1rem,1.6vw,1.45rem); line-height: 1.75; color: var(--navy); margin: 0; max-width: 1000px; }
+.about-story-narrative{ display: grid; grid-template-columns: 1fr 1fr; gap: 48px; padding-top: 30px; border-top: 1px solid #e6eef2; }
+.about-story-narrative p{ margin: 0; line-height: 1.9; color: #405568; }
+@media(max-width:760px){.about-story{ padding-bottom: 52px; }
+.about-story-header{ margin-bottom: 28px; }
+.about-story-foundation{ grid-template-columns: 1fr; gap: 24px; }
+.about-year{ display: flex; gap: 18px; align-items: center; }
+.about-year strong{ font-size: 2.5rem; }
+.about-year span{ margin: 0; }
+.about-story-narrative{ grid-template-columns: 1fr; gap: 24px; }}
+@media(max-width:1100px){.about-intro-grid{ gap: 28px; padding-block: 64px 74px; }
+.about-purpose-card{ padding: 30px; }}
+@media(max-width:700px){.about-intro-grid{ grid-template-columns: 1fr; padding-block: 48px 50px; gap: 20px; }
+.about-intro h1{ font-size: 2.9rem; }
+.about-intro .lead{ font-size: 1.04rem; }
+
+.about-purpose-grid,.about-value-grid{ grid-template-columns: 1fr; gap: 18px; }
+.about-purpose{ padding-bottom: 54px; }
+.about-purpose-card{ padding: 28px; }
+.about-values{ padding-block: 54px; }
+.about-value-card{ padding: 26px; }
+.about-value-icon{ margin-bottom: 18px; }
+.about-contact-inner{ align-items: flex-start; flex-direction: column; gap: 24px; }}
+
+/* Concentric logo composition, derived from the original circular layout. */
+.about-logo-composition{position:relative;display:grid;place-items:center;width:100%;max-width:490px;aspect-ratio:1;justify-self:center;isolation:isolate}
+.about-logo-composition::before{content:'';position:absolute;inset:9%;border-radius:50%;background:radial-gradient(circle,#d5f1f6 0%,#ecf8fa 48%,transparent 72%);filter:blur(12px);z-index:-1}
+.about-logo-ring{position:absolute;border-radius:50%;pointer-events:none}
+.about-logo-ring--outer{inset:1%;background:conic-gradient(from 35deg,transparent 0deg 25deg,#8dc9d6 65deg,#daedf2 135deg,transparent 160deg 208deg,#087f9b 248deg,#a8dce5 305deg,transparent 340deg);mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1px));-webkit-mask:radial-gradient(farthest-side,transparent calc(100% - 2px),#000 calc(100% - 1px))}
+.about-logo-ring--middle{inset:8%;border:18px solid #edf6f9;border-top-color:#d4ebf1;border-right-color:#e1f1f5;transform:rotate(-32deg);box-shadow:inset 0 2px 7px #fff,0 8px 22px #0c6b7e08}
+.about-logo-ring--inner{inset:16%;border:1px solid #b8dce5;background:linear-gradient(145deg,#f7fcfd,#e6f4f7);box-shadow:inset 0 0 24px #fff}
+.about-logo-surface{position:relative;display:grid;place-items:center;width:57%;aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#fff 65%,#f5fafc);border:1px solid #e3eff3;box-shadow:0 16px 32px #0c546b12,inset 0 2px 0 #fff;padding:12%}
+.about-logo-surface img{display:block;width:100%;max-width:250px;height:auto}
+@media(max-width:700px){.about-logo-composition{max-width:330px;margin-top:14px}.about-logo-ring--middle{border-width:12px}}
+
+/* Quiet brand watermarks connect the logo to the surrounding space. */
+.about-logo-watermarks{position:absolute;inset:-8% -6% -8% -26%;z-index:-1;pointer-events:none;user-select:none;overflow:hidden}
+.about-logo-watermarks span{position:absolute;font-family:Manrope,Arial,sans-serif;font-weight:800;font-size:clamp(2.5rem,5vw,4.8rem);line-height:1;letter-spacing:-.06em;white-space:nowrap;color:rgba(8,127,155,.045)}
+.about-logo-watermarks span:nth-child(1){left:0;top:5%}
+.about-logo-watermarks span:nth-child(2){right:0;top:44%;color:rgba(8,127,155,.035)}
+.about-logo-watermarks span:nth-child(3){left:6%;bottom:3%;font-size:clamp(2rem,4vw,3.6rem)}
+@media(max-width:700px){.about-logo-watermarks{inset:-5% -4% -5% -8%}.about-logo-watermarks span{font-size:2.8rem}.about-logo-watermarks span:nth-child(3){font-size:2.3rem}}
+/* Slow brand animation: orbiting circles, floating logo and drifting watermarks. */
+.about-logo-ring--outer{animation:about-brand-orbit 36s linear infinite}
+.about-logo-ring--middle{animation:about-brand-orbit 48s linear infinite reverse}
+.about-logo-ring--inner{animation:about-brand-breathe 8s ease-in-out infinite}
+.about-logo-surface{animation:about-brand-float 7s ease-in-out infinite}
+.about-logo-watermarks span{animation:about-brand-drift 14s ease-in-out infinite alternate}
+.about-logo-watermarks span:nth-child(2){animation-duration:18s;animation-delay:-6s}
+.about-logo-watermarks span:nth-child(3){animation-duration:16s;animation-delay:-9s}
+.about-logo-ring--outer::after{content:"";position:absolute;inset:0;border:2px solid transparent;border-top-color:#16c5e8;border-radius:50%}
+@keyframes about-brand-orbit{to{transform:rotate(360deg)}}
+@keyframes about-brand-breathe{0%,100%{transform:scale(1);opacity:.75}50%{transform:scale(1.035);opacity:1}}
+@keyframes about-brand-float{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+@keyframes about-brand-drift{from{transform:translate(-8px,4px)}to{transform:translate(14px,-8px)}}
+@media(prefers-reduced-motion:reduce){.about-logo-composition *{animation:none!important}}

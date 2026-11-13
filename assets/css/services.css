@@ -1,0 +1,41 @@
+.services-intro{padding-block:76px 64px;background:#fff;border-bottom:1px solid #e1ebf0}
+.services-intro-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:80px;align-items:end}
+.services-eyebrow{display:block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:#087e99}
+.services-intro h1{font-size:clamp(2.8rem,4.4vw,4.8rem);line-height:1.08;letter-spacing:-.045em;color:var(--navy);margin:18px 0 0;max-width:780px}
+.services-intro-copy{padding-left:28px;border-left:2px solid #9dd7e3;max-width:520px}
+.services-intro-copy p{font-size:1.08rem;line-height:1.9;color:#405568;margin:0 0 20px}
+.services-contact-link{display:inline-block;font-size:.88rem;font-weight:800;color:#087e99;border-bottom:1px solid #b7dce4;padding-bottom:5px}
+.services-additional-heading{max-width:760px;margin-bottom:32px}
+.services-additional-heading h2{margin-top:15px}
+.services-additional-grid{max-width:none}
+.services-additional-grid .service-card .service-visual{height:auto;aspect-ratio:1439 / 810;background:var(--soft)}
+.services-additional-grid .service-card .service-visual img{object-fit:contain}
+@media(max-width:900px){.services-intro-grid{grid-template-columns:1fr;gap:30px}.services-intro-copy{max-width:650px}.services-intro{padding-block:50px}.services-intro h1{font-size:clamp(2.6rem,7vw,4rem)}}
+@media(max-width:560px){.services-intro-copy{padding-left:18px}.services-intro-copy p{font-size:1rem}}
+/* Equipment specialties: three compact, native disclosure groups. */
+.service-domains{padding:76px 0;background:#fff;scroll-margin-top:130px}
+.service-domains>.container{max-width:1320px}
+.service-domains-heading{max-width:760px;margin-bottom:32px}
+.service-domains-heading h2{font-size:clamp(2rem,3.4vw,3.4rem);line-height:1.12;letter-spacing:-.035em;color:var(--navy);margin:14px 0 18px}
+.service-domains-heading p,.service-domains-footer p{color:#526579;line-height:1.8;margin:0}
+.service-domain-groups{border:1px solid #dce8ee;border-radius:18px;overflow:hidden}
+.service-domain-group+ .service-domain-group{border-top:1px solid #dce8ee}
+.service-domain-group summary{display:flex;align-items:center;gap:24px;padding:26px 30px;cursor:pointer;list-style:none;background:#f4f9fc}
+.service-domain-group summary::-webkit-details-marker{display:none}
+.service-domain-group summary:hover{background:#edf7fa}
+.service-domain-group summary:focus-visible{outline:3px solid #087e99;outline-offset:-4px}
+.service-domain-summary{flex:1;min-width:0}
+.service-domain-title{display:block;font-size:1.15rem;font-weight:800;color:var(--navy);line-height:1.4}
+.service-domain-description{display:block;font-size:.85rem;line-height:1.7;color:#526579;margin-top:6px}
+.service-domain-count{color:#087e99;font-size:.8rem;font-weight:800}
+.service-domain-toggle{width:28px;height:28px;position:relative;flex-shrink:0;border:1px solid #badbe4;border-radius:50%}
+.service-domain-toggle::before,.service-domain-toggle::after{content:"";position:absolute;background:#087e99;inset:12px 7px}
+.service-domain-toggle::after{transform:rotate(90deg)}
+.service-domain-group[open] .service-domain-toggle::after{display:none}
+.service-domain-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px;list-style:none;margin:0;padding:8px 30px 20px;background:#fff}
+.service-domain-list li{position:relative;padding:17px 0 17px 17px;border-bottom:1px solid #edf2f5;color:#304b5d;font-size:.9rem;line-height:1.65;overflow-wrap:anywhere}
+.service-domain-list li::before{content:"";position:absolute;left:0;top:26px;width:5px;height:5px;border-radius:50%;background:var(--teal)}
+.service-domains-footer{display:flex;justify-content:space-between;align-items:center;gap:32px;margin-top:24px;font-size:.87rem}
+.service-domains-footer .services-contact-link{flex-shrink:0;margin:0}
+@media(max-width:900px){.service-domain-list{grid-template-columns:repeat(2,minmax(0,1fr))}.service-domains-footer{align-items:flex-start;flex-direction:column;gap:16px}}
+@media(max-width:600px){.service-domains{padding:48px 0}.service-domain-group summary{padding:22px 18px;gap:12px}.service-domain-title{font-size:1rem}.service-domain-description{font-size:.79rem}.service-domain-count{display:none}.service-domain-list{grid-template-columns:1fr;padding:4px 18px 18px}.service-domain-list li{padding-block:13px}.service-domain-list li::before{top:23px}}
